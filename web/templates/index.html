@@ -1,0 +1,318 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+      <main >
+         <div class="slider">
+            <!-- list Items -->
+            <div class="list">
+               <div class="item active">
+                  <img src="{%static 'images/sliding/image1.jpg' %}">
+                  <div class="content">
+                    
+                     <h2 class="text-white">Sts. Peter & Paul</h2>
+                     <p class="text-white">
+          Learning is an adventure that will take to you to fascinating places and new horizons
+                     </p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="{%static 'images/sliding/image2.jpg' %}">
+                  <div class="content">
+                      <h2 class="text-white">Sts. Peter & Paul</h2>
+                     <p class="text-white">
+      Learning is an adventure that will take to you to fascinating places and new horizons
+                     </p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="{%static 'images/sliding/image3.jpg' %}">
+                  <div class="content">
+                     <h2 class="text-white">Sts. Peter & Paul</h2>
+                     <p class="text-white">
+       Learning is an adventure that will take to you to fascinating places and new horizons
+                     </p>
+                  </div>
+               </div>
+            
+            </div>
+            <!-- button arrows -->
+            <div class="">
+               <button id="prev"></button>
+               <button id="next"></button>
+            </div>
+            <!-- thumbnail -->
+            <div class="thumbnail">
+               <div class="item active">
+                  <!-- <img src="images/sliding/image1.jpg"> -->
+                  <!-- <div class="content">
+                     Name Slider
+                     </div> -->
+               </div>
+               <div class="item">
+                  <!-- <img src="images/sliding/image2.jpg"> -->
+                  <!-- <div class="content">
+                     Name Slider
+                     </div> -->
+               </div>
+               <div class="item">
+                  <!-- <img src="images/sliding/image3.jpg"> -->
+                 
+               </div>
+              
+            </div>
+         </div>
+      </main>
+    
+    
+      <div class="services-section">
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-lg-4 mb-5 mb-lg-0">
+                  <div class="section-title mb-3" data-aos="fade-up" data-aos-delay="0">
+                     <h2 class="line-bottom mb-4" style="color: #db67e2;">Our Education Philosophy:</h2>
+                  </div>
+                  <p data-aos="fade-up" data-aos-delay="100">At Sts. Peter and Paul Catholic School, we are committed to providing a
+nurturing, inclusive, and Christ-centered learning environment that fosters academic excellence,
+spiritual growth, and character development in our students. Our education policy reflects our
+dedication to upholding Christian values, principles, and teachings in all aspects of our school
+community.</p>
+                  <ul class="ul-check list-unstyled mb-5 primary" data-aos="fade-up" data-aos-delay="200">
+                     <li><span style="color: #db67e2;">Vision  </span>: Formation of holistic human persons.</li>
+                     <li><span style="color: #db67e2;">Mission</span>: To form an intergraded human being through evangelization and quality formal education,
+character formation of the pupil discipline of the pupil, morally and responsible human person as
+God intends.</li>
+                     <li><span style="color: #db67e2;">Motto</span>: The fear of the Lord is the beginning of wisdom (proverbs 9:10)..</li>
+                  </ul>
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="{% url 'web:enroll' %}" style="background-color: #db67e2; border-color: #db67e2;" class="btn btn-primary">Get Started</a></p>
+               </div>
+               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                  <figure class="img-wrap-2">
+                     <img src="{%static 'images/teacher-min.jpg' %}" alt="Image" class="img-fluid">
+                     <div class="dotted"></div>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="untree_co-section">
+         <div class="container">
+            <div class="row justify-content-center mb-5">
+               <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+                  <h2 class="line-bottom text-center mb-4" style="color: #db67e2;">We Have Best Education System</h2>
+                  <p>Our Curriculum: With the Competency-Based Curriculum (CBC), a student's academic progress is
+evaluated longitudinally, reflecting their ongoing learning journey.
+There are two types of assessments:</p>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-12 " data-aos="fade-up" data-aos-delay="100">
+                   <p>1. Kenya Primary School Education Assessment (KPSEA) done in Grade 6 counts for 40% of the
+total grade</p>
+                   <p>2.  School-Based Assessment which takes up 60% of the total grade Assessments are quantified
+by Expectation Level, under 4 levels:</p>
+<p>Exceeding Expectations (EE) where the learner correctly performs or completes all activities as
+expected in each learning area. <br/>
+Meeting Expectations (ME) where the learner correctly follows instructions; they properly perform
+tasks and complete most activities in each learning area. <br/>
+Approaching Expectations (AE) where the learner attempts to follow instructions but is inconsistent
+with completing tasks or activities in the different learning areas. <br/>
+Below Expectation (BE) where a learner is observed to have major inaccuracies or inability to
+complete tasks as instructed by the teacher</p>
+                </div>
+            </div>
+           
+            <div class="row">
+            
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="feature">
+                     <span style="color: #db67e2;" class="uil uil-calculator-alt"></span>
+                     <h3 style="color: #db67e2;">Pre-school</h3>
+                     <p>
+                        It consists of three levels: Playgroup, Pre-Primary 1, and Pre-Primary 2. 
+                     </p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature">
+                     <span  style="color: #db67e2;"class="uil uil-book-open"></span>
+                     <h3 style="color: #db67e2;">Lower School: </h3>
+                     <p>
+                        It consists of three levels: Grade 1, Grade 2, and Grade 3.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay=100">
+                  <div class="feature">
+                     <span  style="color: #db67e2;"class="uil uil-book-alt"></span>
+                     <h3 style="color: #db67e2;">Middle School: </h3>
+                     <p >
+                        It consists of three levels: Grade 4, Grade 5, and Grade 6.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="feature">
+                     <span  style="color: #db67e2;"class="uil uil-history"></span>
+                     <h3 style="color: #db67e2;">Junior Secondary School: </h3>
+                     <p>
+                        It consists of three levels: Grade 7, Grade 8, and Grade 9.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature">
+                     <span style="color: #db67e2;" class="uil uil-headphones"></span>
+                     <h3 style="color: #db67e2;">Co-curricular Activities: </h3>
+                     <p>
+                        This includes Music, Drama, Dance, Sports, Chess, Ballet, Taekwondo, Skating, Karate, Outdoor education and educational visits.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.container -->
+      </div>
+   
+      <div class="untree_co-section pt-0 bg-img overlay" style="background-image: url('images/gallery/1.jpeg');">
+         <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+               <div class="col-lg-7">
+                  <h2 class="text-white mb-3" data-aos="fade-up" data-aos-delay="0">Our Guiding Principles:</h2>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">1.<id>Continuous Growth and Learning</id><span>:Cultivating a culture of lifelong learning and growth for
+both students and staff, encouraging curiosity, exploration, and personal development.</span></p>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">2.<id>Character Development</id><span>: Promoting the development of positive character traits such as
+honesty, kindness, resilience, and empathy, nurturing well-rounded individuals.</span></p>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">3.<id>Partnership with Parents</id><span> :Recognizing parents as essential partners in their child's
+education, fostering open communication, collaboration, and involvement in school
+activities</span></p>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">4.<id>Learning Through Play</id> <span>:Embracing the importance of play-based learning as a fundamental
+aspect of children's development, fostering curiosity, creativity, and social skills.</span></p>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">5.<id>Respect for Self and Others</id><span>:Promoting mutual respect, understanding, and empathy among
+students, staff, and stakeholders, creating a positive and supportive school community.</span></p>
+                  <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">6.<id>Excellence in Education</id><span>:Striving for academic excellence through high-quality teaching,
+rigorous standards, and continuous improvement to maximize student potential.</span></p>
+                  <!-- <p><a href="#" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="200">Enroll Now</a></p> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.untree_co-section -->
+      <div class="untree_co-section">
+         <div class="container">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-lg-5 mb-5">
+                  <h2 class="line-bottom mb-4" data-aos="fade-up" data-aos-delay="0" style="color: #db67e2;">About Us</h2>
+                  <p data-aos="fade-up" data-aos-delay="100">Welcome to St. Peter and Paul School where learning thrives in a nurturing environment. With modern facilities and dynamic teaching, every student experiences hands-on learning and personalized growth. Join us for an enriching educational journey.</p>
+                  <ul class="list-unstyled ul-check mb-5 primary" data-aos="fade-up" data-aos-delay="200">
+                     <li>A co-educational institution serving the community for over twenty five years.</li>
+                     <li>We span from pre-school to junior secondary.</li>
+                     <li>A wide range of programs and coursesthat cater to different interests and abilities.</li>
+                  </ul>
+                  <div class="row count-numbers mb-5">
+                     <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                        <span class="counter d-block"><span style="color: #db67e2;" data-number="4500">0</span><span style="color: #db67e2;">+</span></span>
+                        <span class="caption-2">No. Students</span>
+                     </div>
+                     <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <span class="counter d-block"><span  style="color: #db67e2;"data-number="50">0</span><span></span></span>
+                        <span class="caption-2">No. Teachers</span>
+                     </div>
+                     <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <span class="counter d-block"><span style="color: #db67e2;" data-number="12">0</span><span></span></span>
+                        <span class="caption-2">No. Awards</span>
+                     </div>
+                  </div>
+                  <p data-aos="fade-up" data-aos-delay="200">
+                     <a href="{% url 'web:enroll' %}" class="btn btn-primary mr-1" style="background-color: #db67e2; border-color: #db67e2;">Enroll now</a>
+                     </p>
+               </div>
+              
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                  <figure class="img-wrap-2">
+                     <img src="{%static 'images/gallery/1.jpg' %}" alt="Image" class="img-fluid">
+                     <div class="dotted"></div>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </div>
+  
+      <div class="untree_co-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-5 mr-auto mb-5 mb-lg-0"  data-aos="fade-up" data-aos-delay="0">
+                  <img src="{%static 'images/gallery/2.jpg' %}" alt="image" class="img-fluid">
+               </div>
+               <div class="col-lg-7 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                  <h3 class="line-bottom mb-4" style="color: #db67e2;">Why Choose Us</h3>
+                  <p>We strive to empower your child to become confident,compassionate and successful individuals through provision of well rounded education.</p>
+                  <div class="custom-accordion" id="accordion_1">
+                     <div class="accordion-item">
+                        <h2 class="mb-0">
+                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Good Teachers and Staffs</button>
+                        </h2>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_1">
+                           <div class="accordion-body">
+                              <div class="d-flex">
+                                 <div class="accordion-img mr-4">
+                                    <img src="{%static 'images/gallery/6.jpg' %}" alt="Image" class="img-fluid">
+                                 </div>
+                                 <div>
+                                    <p>Our school takes pride in our team of highly educated and qualified educators.</p>
+                                    Our teachers undergo professional continuous proffessional development and training to ensure they are up_to_date with the latest educational practices and methodologies.
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- .accordion-item -->
+                     <div class="accordion-item">
+                        <h2 class="mb-0">
+                           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">We Value Good Characters</button>
+                        </h2>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_1">
+                           <div class="accordion-body">
+                              <div class="d-flex">
+                                 <div class="accordion-img mr-4">
+                                    <img src="{%static 'images/gallery/3.jpg' %}" alt="Image" class="img-fluid">
+                                 </div>
+                                 <div>
+                                    <p>We are dedicated to cultivating strong character traits:Honesty,integrity and respect.</p>
+                                    <P>Our aim is not only academic excellence but also demonstrate moral integrity of our students in their interactions with others.</P>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- .accordion-item -->
+                     <div class="accordion-item">
+                        <h2 class="mb-0">
+                           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your children are safe</button>
+                        </h2>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_1">
+                           <div class="accordion-body">
+                              <div class="d-flex">
+                                 <div class="accordion-img mr-4">
+                                    <img src="{%static 'images/gallery/4.jpg' %}" alt="Image" class="img-fluid">
+                                 </div>
+                                 <div>
+                                    <p>We have implemented stringent safety prototcols,including regular drills and training for emergencies and secure entry systems.</p>
+                                    <P>Vigilant staff members who priotize the well-being of each child.</P>
+                                   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- .accordion-item -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.untree_co-section -->
+{% endblock%}

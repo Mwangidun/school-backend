@@ -1,0 +1,1 @@
+web: gunicorn Stpeter.wsgi --log-file -

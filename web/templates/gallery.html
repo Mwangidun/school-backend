@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div
+  class="untree_co-hero overlay"
+  style="background-image: url('{% static 'images/img-school-35-min.jpg' %}');"
+>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h1
+              class="mb-4 heading text-white"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Gallery
+            </h1>
+            <div
+              class="mb-5 text-white desc mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <p>
+                At Sts. Peter and Paul Catholic School, we are committed to
+                providing a nurturing, inclusive, and Christ-centered learning
+                environment that fosters academic excellence, spiritual growth,
+                and character development in our students. Our education policy
+                reflects our dedication to upholding Christian values,
+                principles, and teachings in all aspects of our school
+                community.
+              </p>
+            </div>
+
+            <p class="mb-0" data-aos="fade-up" data-aos-delay="300">
+              <a href="{% url 'web:about' %}" class="btn btn-secondary">Explore classes</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.untree_co-hero -->
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      {% for gallery in gallery %}
+        <div class="col-md-6 col-lg-4 item">
+          <a
+            href="{{ gallery.img.url }}"
+            class="item-wrap fancybox mb-4"
+            data-fancybox="gal"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="{{ gallery.img.url }}" alt="{{ gallery.title }}" />
+          </a>
+        </div>
+      {% empty %}
+        <p>No images available.</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- /.untree_co-section -->
+{% endblock %}
